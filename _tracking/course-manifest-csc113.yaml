@@ -1,0 +1,533 @@
+# course-manifest.yaml
+# CSC 113: AI Fundamentals
+# Course Development Tracking System v0.1
+#
+# This manifest reflects the development state of CSC 113
+# as of initial tracking system implementation.
+#
+# STATUS KEY:
+#   planned  - Identified as needed, not started
+#   draft    - In progress or exists in non-final form
+#   review   - Complete, pending review/approval
+#   complete - Ready for student use
+
+manifest_version: "0.1"
+last_updated: "2025-01-26T00:00:00Z"
+
+# ============================================================================
+# COURSE METADATA
+# ============================================================================
+course:
+  id: "CSC-113"
+  name: "AI Fundamentals"
+  credits: 3
+  
+  description: |
+    This course provides a survey of artificial intelligence and machine 
+    learning. Topics include the history, development, and current applications 
+    of artificial intelligence and machine learning. Upon completion, students 
+    should be able to demonstrate general artificial intelligence and machine 
+    learning concepts.
+  
+  prerequisites: []    # No prerequisites
+  corequisites: []
+  
+  repository: "course-csc113-template"
+  claude_project_id: ""
+  
+  # Learning outcomes - NEED EXPANSION (currently minimal)
+  outcomes:
+    - "Apply professional software development workflows using GitHub"
+    - "Effectively collaborate with AI tools to solve problems"
+    - "Demonstrate prompt engineering techniques across platforms"
+    - "Evaluate AI outputs critically for limitations and bias"
+    - "Build and deploy a functional AI-assisted application"
+    - "Communicate technical work through documentation and portfolio"
+    - "Apply ethical reasoning to AI implementation decisions"
+
+  # Badge/credential alignment - TO BE DEVELOPED
+  badge:
+    name: "AI Fundamentals & Professional Workflow"
+    level: "Introductory"
+    skills:
+      - "GitHub Professional Workflow"
+      - "AI Tool Collaboration"
+      - "Prompt Engineering"
+      - "Critical AI Evaluation"
+      - "AI Application Development"
+      - "Technical Communication"
+
+# ============================================================================
+# MODULE DEFINITIONS
+# ============================================================================
+modules:
+  # --------------------------------------------------------------------------
+  - id: "M01"
+    name: "AI Foundations & GitHub Workflow"
+    weeks: [1, 2]
+    description: "Introduction to AI concepts and professional GitHub-first development workflow"
+    
+    deliverables:
+      - type: "reading"
+        name: "What is AI? History, Types, and Applications"
+        file: "module-01/readings/what-is-ai.md"
+        status: "planned"
+        
+      - type: "reading"
+        name: "Professional Development Workflows"
+        file: "module-01/readings/github-workflow.md"
+        status: "planned"
+        notes: "Core philosophy doc exists, needs student adaptation"
+        
+      - type: "tutorial"
+        name: "GitHub Account and First Repository"
+        file: "module-01/tutorials/github-setup.md"
+        status: "planned"
+        
+      - type: "tutorial"
+        name: "Issues, Branches, and Pull Requests"
+        file: "module-01/tutorials/github-workflow.md"
+        status: "planned"
+        
+      - type: "lab"
+        name: "Lab 1: Environment Setup"
+        file: "module-01/labs/lab-01-setup.md"
+        status: "planned"
+        
+      - type: "lab"
+        name: "Lab 2: GitHub Workflow Practice"
+        file: "module-01/labs/lab-02-workflow.md"
+        status: "planned"
+        
+      - type: "reference"
+        name: "GitHub-First Workflow Rationale"
+        file: "resources/concept-issues-prs-first.md"
+        status: "complete"
+        notes: "Instructor reference, philosophy document"
+
+  # --------------------------------------------------------------------------
+  - id: "M02"
+    name: "Your First AI Assistant"
+    weeks: [3, 4]
+    description: "Introduction to AI assistants, rate limits, and building SAGE basics"
+    
+    deliverables:
+      - type: "reading"
+        name: "Working with AI Assistants"
+        file: "module-02/readings/ai-assistants.md"
+        status: "draft"
+        notes: "Practical Gemini Guide exists, needs adaptation"
+        
+      - type: "reading"
+        name: "Understanding Rate Limits and Costs"
+        file: "module-02/readings/rate-limits.md"
+        status: "draft"
+        notes: "Gemini Model Selection Guide covers this"
+        
+      - type: "tutorial"
+        name: "Google AI Studio Setup"
+        file: "module-02/tutorials/ai-studio-setup.md"
+        status: "planned"
+        
+      - type: "tutorial"
+        name: "Your First Conversation with Gemini"
+        file: "module-02/tutorials/first-conversation.md"
+        status: "planned"
+        
+      - type: "lab"
+        name: "Lab 3: Building Kevin Jr."
+        file: "module-02/labs/lab-03-kevin-jr.md"
+        status: "planned"
+        
+      - type: "lab"
+        name: "Lab 4: Prompt Iteration and Documentation"
+        file: "module-02/labs/lab-04-iteration.md"
+        status: "planned"
+        
+      - type: "homework"
+        name: "AI Platform Comparison"
+        file: "module-02/homework/hw-01-comparison.md"
+        status: "planned"
+        
+      - type: "reference"
+        name: "Practical Guide to Free Gemini Tools"
+        file: "resources/gemini-student-guide.md"
+        status: "complete"
+        
+      - type: "reference"
+        name: "Gemini Model Selection Guide"
+        file: "resources/gemini-model-selection.md"
+        status: "complete"
+
+  # --------------------------------------------------------------------------
+  - id: "M03"
+    name: "Prompt Engineering Fundamentals"
+    weeks: [5, 6]
+    description: "Effective prompting techniques, patterns, and documentation practices"
+    
+    deliverables:
+      - type: "reading"
+        name: "The Art of Prompting"
+        file: "module-03/readings/prompting-art.md"
+        status: "planned"
+        
+      - type: "reading"
+        name: "Context, Constraints, and Examples"
+        file: "module-03/readings/prompt-structure.md"
+        status: "planned"
+        
+      - type: "tutorial"
+        name: "Prompt Engineering Patterns"
+        file: "module-03/tutorials/prompt-patterns.md"
+        status: "planned"
+        
+      - type: "tutorial"
+        name: "Multi-turn Conversations and Memory"
+        file: "module-03/tutorials/conversation-memory.md"
+        status: "planned"
+        
+      - type: "lab"
+        name: "Lab 5: Structured Prompt Development"
+        file: "module-03/labs/lab-05-structured.md"
+        status: "planned"
+        
+      - type: "lab"
+        name: "Lab 6: Prompt Templates and Reusability"
+        file: "module-03/labs/lab-06-templates.md"
+        status: "planned"
+        
+      - type: "homework"
+        name: "Prompt Library Creation"
+        file: "module-03/homework/hw-02-library.md"
+        status: "planned"
+
+  # --------------------------------------------------------------------------
+  - id: "M04"
+    name: "AI-Assisted Problem Solving"
+    weeks: [7, 8]
+    description: "Using AI as thought partner, critical evaluation, debugging assistance"
+    
+    deliverables:
+      - type: "reading"
+        name: "AI as Thought Partner"
+        file: "module-04/readings/thought-partner.md"
+        status: "planned"
+        
+      - type: "reading"
+        name: "Critical Evaluation of AI Outputs"
+        file: "module-04/readings/critical-evaluation.md"
+        status: "planned"
+        notes: "Assessment Framework has foundations"
+        
+      - type: "tutorial"
+        name: "Debugging with AI Assistance"
+        file: "module-04/tutorials/ai-debugging.md"
+        status: "planned"
+        
+      - type: "tutorial"
+        name: "Research and Synthesis with AI"
+        file: "module-04/tutorials/ai-research.md"
+        status: "planned"
+        
+      - type: "lab"
+        name: "Lab 7: Solve a Real Problem"
+        file: "module-04/labs/lab-07-real-problem.md"
+        status: "planned"
+        
+      - type: "lab"
+        name: "Lab 8: Error Detection and Correction"
+        file: "module-04/labs/lab-08-errors.md"
+        status: "planned"
+        
+      - type: "project"
+        name: "Project 1: SAGE Foundation"
+        file: "module-04/projects/project-01-sage-foundation.md"
+        status: "planned"
+        notes: "C-grade milestone"
+        
+      - type: "rubric"
+        name: "Project 1 Rubric"
+        file: "module-04/rubrics/project-01-rubric.md"
+        status: "planned"
+
+  # --------------------------------------------------------------------------
+  - id: "M05"
+    name: "Specialization: Prompt Masters & Code Builders"
+    weeks: [9, 10]
+    description: "Track divergence - advanced prompting vs technical implementation"
+    
+    deliverables:
+      - type: "reading"
+        name: "Choosing Your Path"
+        file: "module-05/readings/track-selection.md"
+        status: "planned"
+        notes: "Track descriptions exist in instructor docs"
+        
+      - type: "tutorial"
+        name: "Prompt Masters: Advanced AI Studio"
+        file: "module-05/tutorials/pm-advanced-studio.md"
+        status: "planned"
+        
+      - type: "tutorial"
+        name: "Prompt Masters: Custom Assistants"
+        file: "module-05/tutorials/pm-custom-assistants.md"
+        status: "planned"
+        
+      - type: "tutorial"
+        name: "Code Builders: Python + API Basics"
+        file: "module-05/tutorials/cb-python-api.md"
+        status: "planned"
+        
+      - type: "tutorial"
+        name: "Code Builders: LangChain Introduction"
+        file: "module-05/tutorials/cb-langchain.md"
+        status: "draft"
+        notes: "HuggingFace guide has LangChain content"
+        
+      - type: "lab"
+        name: "Lab 9A: Prompt Masters Track Exercise"
+        file: "module-05/labs/lab-09a-pm.md"
+        status: "planned"
+        
+      - type: "lab"
+        name: "Lab 9B: Code Builders Track Exercise"
+        file: "module-05/labs/lab-09b-cb.md"
+        status: "planned"
+        
+      - type: "lab"
+        name: "Lab 10A: Prompt Masters Advanced"
+        file: "module-05/labs/lab-10a-pm.md"
+        status: "planned"
+        
+      - type: "lab"
+        name: "Lab 10B: Code Builders Advanced"
+        file: "module-05/labs/lab-10b-cb.md"
+        status: "planned"
+        
+      - type: "reference"
+        name: "Free AI Tools Research"
+        file: "resources/free-ai-tools.md"
+        status: "complete"
+
+  # --------------------------------------------------------------------------
+  - id: "M06"
+    name: "Building AI Applications"
+    weeks: [11, 12]
+    description: "Application architecture, deployment, SAGE enhancement"
+    
+    deliverables:
+      - type: "reading"
+        name: "From Prototype to Application"
+        file: "module-06/readings/prototype-to-app.md"
+        status: "draft"
+        notes: "SAGE MVP Summary provides foundation"
+        
+      - type: "reading"
+        name: "AI Application Architecture Patterns"
+        file: "module-06/readings/architecture-patterns.md"
+        status: "planned"
+        
+      - type: "tutorial"
+        name: "Streamlit/Gradio for Prompt Masters"
+        file: "module-06/tutorials/pm-ui-frameworks.md"
+        status: "planned"
+        
+      - type: "tutorial"
+        name: "FastAPI + Gemini for Code Builders"
+        file: "module-06/tutorials/cb-fastapi-gemini.md"
+        status: "draft"
+        notes: "SAGE technical docs cover this"
+        
+      - type: "lab"
+        name: "Lab 11: Build a Deployable Component"
+        file: "module-06/labs/lab-11-component.md"
+        status: "planned"
+        
+      - type: "lab"
+        name: "Lab 12: Testing and Iteration"
+        file: "module-06/labs/lab-12-testing.md"
+        status: "planned"
+        
+      - type: "project"
+        name: "Project 2: SAGE Enhancement"
+        file: "module-06/projects/project-02-sage-enhancement.md"
+        status: "planned"
+        notes: "B-grade milestone"
+        
+      - type: "rubric"
+        name: "Project 2 Rubric"
+        file: "module-06/rubrics/project-02-rubric.md"
+        status: "planned"
+        
+      - type: "reference"
+        name: "SAGE MVP Project Summary"
+        file: "resources/sage-mvp-summary.md"
+        status: "complete"
+        
+      - type: "reference"
+        name: "HuggingFace Implementation Guide"
+        file: "resources/huggingface-guide.md"
+        status: "complete"
+
+  # --------------------------------------------------------------------------
+  - id: "M07"
+    name: "Real-World AI Integration"
+    weeks: [13, 14]
+    description: "Community partner projects, stakeholder communication, requirements"
+    
+    deliverables:
+      - type: "reading"
+        name: "Working with Stakeholders"
+        file: "module-07/readings/stakeholders.md"
+        status: "planned"
+        
+      - type: "reading"
+        name: "Requirements Gathering for AI Projects"
+        file: "module-07/readings/requirements.md"
+        status: "planned"
+        
+      - type: "tutorial"
+        name: "Scoping an AI Solution"
+        file: "module-07/tutorials/scoping.md"
+        status: "planned"
+        
+      - type: "tutorial"
+        name: "Presentation and Demo Preparation"
+        file: "module-07/tutorials/presentation-prep.md"
+        status: "planned"
+        
+      - type: "lab"
+        name: "Lab 13: Partner Project Kickoff"
+        file: "module-07/labs/lab-13-kickoff.md"
+        status: "planned"
+        
+      - type: "lab"
+        name: "Lab 14: Mid-Project Review"
+        file: "module-07/labs/lab-14-review.md"
+        status: "planned"
+        
+      - type: "homework"
+        name: "Project Documentation Update"
+        file: "module-07/homework/hw-03-documentation.md"
+        status: "planned"
+
+  # --------------------------------------------------------------------------
+  - id: "M08"
+    name: "Capstone & Portfolio Defense"
+    weeks: [15, 16]
+    description: "Final project delivery, portfolio presentation, badge assessment"
+    
+    deliverables:
+      - type: "reading"
+        name: "Building Your Portfolio"
+        file: "module-08/readings/portfolio.md"
+        status: "planned"
+        
+      - type: "reading"
+        name: "Presenting Technical Work"
+        file: "module-08/readings/presenting.md"
+        status: "planned"
+        
+      - type: "tutorial"
+        name: "GitHub Portfolio Optimization"
+        file: "module-08/tutorials/portfolio-optimization.md"
+        status: "planned"
+        
+      - type: "tutorial"
+        name: "Demo Preparation Checklist"
+        file: "module-08/tutorials/demo-checklist.md"
+        status: "planned"
+        
+      - type: "project"
+        name: "Project 3: Community Partner Deliverable"
+        file: "module-08/projects/project-03-partner.md"
+        status: "planned"
+        notes: "A-grade milestone"
+        
+      - type: "project"
+        name: "Capstone: Portfolio Defense"
+        file: "module-08/projects/capstone-defense.md"
+        status: "planned"
+        notes: "Badge requirement"
+        
+      - type: "rubric"
+        name: "Project 3 Rubric"
+        file: "module-08/rubrics/project-03-rubric.md"
+        status: "planned"
+        
+      - type: "rubric"
+        name: "Portfolio Defense Rubric"
+        file: "module-08/rubrics/capstone-rubric.md"
+        status: "draft"
+        notes: "Assessment Framework provides foundation"
+
+# ============================================================================
+# PROGRESS TRACKING
+# ============================================================================
+progress:
+  total_deliverables: 67
+  complete: 7      # Reference documents that exist
+  review: 0
+  draft: 7         # Partial content or needs adaptation
+  planned: 53
+  percentage: 10   # (complete / total_deliverables) * 100
+
+# ============================================================================
+# SUPPLEMENTARY RESOURCES (Not module-specific)
+# ============================================================================
+resources:
+  # Instructor Materials (Strong)
+  - name: "Instructor Operations Manual"
+    file: "docs/instructor-operations.md"
+    status: "complete"
+    
+  - name: "GameFAQs-Style Instructor Guide"
+    file: "docs/instructor-gamefaqs.md"
+    status: "complete"
+    
+  - name: "Integrated Implementation Guide"
+    file: "docs/implementation-guide.md"
+    status: "complete"
+    
+  # Technical References
+  - name: "SAGE MVP Summary"
+    file: "resources/sage-mvp-summary.md"
+    status: "complete"
+    
+  - name: "Gemini Model Selection Guide"
+    file: "resources/gemini-model-selection.md"
+    status: "complete"
+    
+  - name: "Practical Gemini Guide for Students"
+    file: "resources/gemini-student-guide.md"
+    status: "complete"
+    
+  - name: "Free AI Tools Research"
+    file: "resources/free-ai-tools.md"
+    status: "complete"
+    
+  - name: "HuggingFace Implementation Guide"
+    file: "resources/huggingface-guide.md"
+    status: "complete"
+    
+  - name: "Docker Compose Configuration"
+    file: "docker-compose.yml"
+    status: "complete"
+    
+  # Pedagogical Framework
+  - name: "GitHub-First Workflow Philosophy"
+    file: "docs/github-first-philosophy.md"
+    status: "complete"
+    
+  - name: "Progressive Branching Model"
+    file: "docs/progressive-branching.md"
+    status: "complete"
+    
+  - name: "AI-Required Assessment Framework"
+    file: "docs/assessment-framework.md"
+    status: "draft"
+    notes: "Categories defined, rubrics not formalized"
+    
+  - name: "Mixed-Ability Learner Design"
+    file: "docs/mixed-ability-design.md"
+    status: "complete"
