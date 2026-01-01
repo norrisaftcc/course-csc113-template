@@ -1,0 +1,292 @@
+# course-manifest.yaml
+# Course Development Tracking System - Manifest Specification v0.1
+# CSC-113 AI Fundamentals
+
+manifest_version: "0.1"
+last_updated: "2026-01-01T19:45:00Z"
+
+course:
+  id: "CSC-113"
+  name: "AI Fundamentals"
+  credits: 3
+  description: |
+    Introduction to artificial intelligence concepts and practical AI tool usage.
+    Students build SAGE (Scholar's Adaptive Growth Engine), a personal AI study
+    assistant, while learning GitHub workflow, prompt engineering, and critical
+    AI evaluation. Two tracks available: Code Builders (programming focus) and
+    Prompt Masters (no-code focus).
+  prerequisites: []
+  corequisites: []
+
+  repository: "course-csc113-template"
+  claude_project_id: ""
+
+  outcomes:
+    - "Configure and customize AI assistants using context documents"
+    - "Apply professional GitHub workflow (Issue → Branch → PR → Merge)"
+    - "Demonstrate effective prompt engineering techniques"
+    - "Critically evaluate AI outputs for accuracy and bias"
+    - "Build portfolio-quality projects using AI collaboration"
+    - "Document learning process and AI interactions professionally"
+
+modules:
+  - id: "M01"
+    name: "SAGE Foundation & GitHub Setup"
+    weeks: [1, 2]
+    phase: "Configure"
+    description: "Set up professional portfolio, GitHub workflow, and SAGE AI assistant"
+    status: "complete"
+
+    deliverables:
+      - type: "assignment"
+        name: "M01-A1: Hello GitHub"
+        file: "assignments/week-01-hello-github.md"
+        status: "complete"
+
+      - type: "assignment"
+        name: "M01-A2: Meet Kevin & SAGE"
+        file: "assignments/week-02-meet-kevin-sage.md"
+        status: "complete"
+
+      - type: "context-doc"
+        name: "SAGE-core.md"
+        file: "sage-context/SAGE-core.md"
+        status: "planned"
+
+      - type: "context-doc"
+        name: "course-overview.md"
+        file: "sage-context/course-overview.md"
+        status: "planned"
+
+  - id: "M02"
+    name: "AI Exploration & GitHub Mastery"
+    weeks: [3, 4]
+    phase: "Configure"
+    description: "AI timeline research, tool comparison, and Bad Bot design"
+    status: "complete"
+
+    deliverables:
+      - type: "assignment"
+        name: "M02-A1: AI Timeline Research"
+        file: "assignments/week-03-ai-timeline.md"
+        status: "complete"
+
+      - type: "assignment"
+        name: "M02-A2: Bad Bot"
+        file: "assignments/week-04-bad-bot.md"
+        status: "complete"
+
+      - type: "context-doc"
+        name: "github-basics.md"
+        file: "sage-context/github-basics.md"
+        status: "planned"
+
+      - type: "context-doc"
+        name: "github-troubleshooting.md"
+        file: "sage-context/github-troubleshooting.md"
+        status: "planned"
+
+  - id: "M03"
+    name: "Prompt Engineering"
+    weeks: [5, 6]
+    phase: "Expand"
+    description: "Good Bot iteration, Holiday Shopping research, prompt mastery"
+    status: "complete"
+
+    deliverables:
+      - type: "assignment"
+        name: "M03-A1: Good Bot"
+        file: "assignments/week-05-good-bot.md"
+        status: "complete"
+
+      - type: "assignment"
+        name: "M03-A2: Holiday Shopping Research"
+        file: "assignments/week-06-holiday-shopping.md"
+        status: "complete"
+
+      - type: "context-doc"
+        name: "prompt-engineering.md"
+        file: "sage-context/prompt-engineering.md"
+        status: "planned"
+
+      - type: "context-doc"
+        name: "ai-platforms.md"
+        file: "sage-context/ai-platforms.md"
+        status: "planned"
+
+      - type: "context-doc"
+        name: "rate-limits-costs.md"
+        file: "sage-context/rate-limits-costs.md"
+        status: "planned"
+
+  - id: "M04"
+    name: "Project Ideation & Track Selection"
+    weeks: [7, 8]
+    phase: "Expand"
+    description: "Project brainstorming, track specialization, debugging skills"
+    status: "draft"
+
+    deliverables:
+      - type: "assignment"
+        name: "M04-A1: Project Ideation"
+        file: "assignments/week-07-project-ideation.md"
+        status: "complete"
+
+      - type: "assignment"
+        name: "M04-A2: Track Specialization"
+        file: "assignments/week-08-track-specialization.md"
+        status: "planned"
+
+      - type: "context-doc"
+        name: "debugging-guide.md"
+        file: "sage-context/debugging-guide.md"
+        status: "planned"
+
+      - type: "context-doc"
+        name: "critical-evaluation.md"
+        file: "sage-context/critical-evaluation.md"
+        status: "planned"
+
+  - id: "M05"
+    name: "Rapid Prototyping"
+    weeks: [9, 10]
+    phase: "Customize"
+    description: "PRD creation, prototype sprint, project planning"
+    status: "planned"
+
+    deliverables:
+      - type: "assignment"
+        name: "M05-A1: Rapid Prototype Sprint"
+        file: "assignments/week-09-rapid-prototype.md"
+        status: "planned"
+
+      - type: "assignment"
+        name: "M05-A2: Project Planning"
+        file: "assignments/week-10-project-planning.md"
+        status: "planned"
+
+      - type: "context-doc"
+        name: "conversation-design.md (Prompt Masters)"
+        file: "sage-context/conversation-design.md"
+        status: "planned"
+
+      - type: "context-doc"
+        name: "code-assistance.md (Code Builders)"
+        file: "sage-context/code-assistance.md"
+        status: "planned"
+
+      - type: "context-doc"
+        name: "project-planning.md"
+        file: "sage-context/project-planning.md"
+        status: "planned"
+
+  - id: "M06"
+    name: "Application Building"
+    weeks: [11, 12]
+    phase: "Customize"
+    description: "Sprint 1 development cycle with review and retrospective"
+    status: "planned"
+
+    deliverables:
+      - type: "assignment"
+        name: "M06-A1: Sprint 1 Kickoff"
+        file: "assignments/week-11-sprint1-kickoff.md"
+        status: "planned"
+
+      - type: "assignment"
+        name: "M06-A2: Sprint 1 Review"
+        file: "assignments/week-12-sprint1-review.md"
+        status: "planned"
+
+  - id: "M07"
+    name: "Real-World Integration"
+    weeks: [13, 14]
+    phase: "Build"
+    description: "Sprint 2, community partner work, portfolio building"
+    status: "planned"
+
+    deliverables:
+      - type: "assignment"
+        name: "M07-A1: Sprint 2 Kickoff"
+        file: "assignments/week-13-sprint2-kickoff.md"
+        status: "planned"
+
+      - type: "assignment"
+        name: "M07-A2: Sprint 2 Review"
+        file: "assignments/week-14-sprint2-review.md"
+        status: "planned"
+
+      - type: "context-doc"
+        name: "portfolio-guide.md"
+        file: "sage-context/portfolio-guide.md"
+        status: "planned"
+
+  - id: "M08"
+    name: "Capstone & Portfolio Defense"
+    weeks: [15, 16]
+    phase: "Build"
+    description: "Final project submission, presentation, portfolio defense"
+    status: "planned"
+
+    deliverables:
+      - type: "assignment"
+        name: "M08-A1: Portfolio Preparation"
+        file: "assignments/week-15-portfolio-prep.md"
+        status: "planned"
+
+      - type: "assignment"
+        name: "M08-A2: Final Presentation"
+        file: "assignments/week-16-final-presentation.md"
+        status: "planned"
+
+      - type: "context-doc"
+        name: "presentation-prep.md"
+        file: "sage-context/presentation-prep.md"
+        status: "planned"
+
+# Summary statistics
+progress:
+  total_assignments: 16
+  assignments_complete: 7
+  assignments_draft: 0
+  assignments_planned: 9
+  assignment_percentage: 44
+
+  total_context_docs: 14
+  context_docs_complete: 0
+  context_docs_planned: 14
+  context_doc_percentage: 0
+
+  overall_percentage: 23  # (7 + 0) / (16 + 14) * 100
+
+# Supporting materials status
+supporting_materials:
+  guides:
+    - name: "GitHub Survival Guide"
+      file: "guides/github-survival-guide.md"
+      status: "planned"
+    - name: "AI Tools Getting Started"
+      file: "guides/ai-tools-getting-started.md"
+      status: "planned"
+    - name: "Troubleshooting FAQ"
+      file: "guides/troubleshooting-faq.md"
+      status: "planned"
+
+  instructor:
+    - name: "Operations Manual"
+      file: "instructor/operations-manual.md"
+      status: "complete"
+    - name: "Assessment Rubrics"
+      file: "instructor/assessment-rubrics.md"
+      status: "planned"
+
+  templates:
+    - name: "Assignment Template"
+      file: "templates/assignment-template.md"
+      status: "planned"
+    - name: "Reflection Template"
+      file: "templates/reflection-template.md"
+      status: "complete"
+    - name: "PR Template"
+      file: "templates/pr-template.md"
+      status: "planned"
