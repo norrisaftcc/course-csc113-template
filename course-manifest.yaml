@@ -3,7 +3,7 @@
 # CSC-113 AI Fundamentals
 
 manifest_version: "0.1"
-last_updated: "2026-01-01T21:00:00Z"
+last_updated: "2026-01-01T22:30:00Z"
 
 course:
   id: "CSC-113"
@@ -124,7 +124,7 @@ modules:
     weeks: [7, 8]
     phase: "Expand"
     description: "Project brainstorming, track specialization, debugging skills"
-    status: "draft"
+    status: "complete"
 
     deliverables:
       - type: "assignment"
@@ -135,7 +135,7 @@ modules:
       - type: "assignment"
         name: "M04-A2: Track Specialization"
         file: "assignments/week-08-track-specialization.md"
-        status: "planned"
+        status: "complete"
 
       - type: "context-doc"
         name: "debugging-guide.md"
@@ -145,7 +145,7 @@ modules:
       - type: "context-doc"
         name: "critical-evaluation.md"
         file: "sage-context/critical-evaluation.md"
-        status: "planned"
+        status: "complete"
 
   - id: "M05"
     name: "Rapid Prototyping"
@@ -247,17 +247,17 @@ modules:
 # Summary statistics
 progress:
   total_assignments: 16
-  assignments_complete: 7
+  assignments_complete: 8
   assignments_draft: 0
-  assignments_planned: 9
-  assignment_percentage: 44
+  assignments_planned: 8
+  assignment_percentage: 50
 
   total_context_docs: 14
-  context_docs_complete: 4
-  context_docs_planned: 10
-  context_doc_percentage: 29
+  context_docs_complete: 5
+  context_docs_planned: 9
+  context_doc_percentage: 36
 
-  overall_percentage: 37  # (7 + 4) / (16 + 14) * 100
+  overall_percentage: 43  # (8 + 5) / (16 + 14) * 100
 
 # Supporting materials status
 supporting_materials:
