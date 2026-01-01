@@ -255,7 +255,7 @@ pip install [library]
 ## Confidence Level
 **Comfort with API calls**: [1-5]
 **Ready for more complex work?**: [Yes/Partially/Need more practice]
-```
+\`\`\`
 
 ---
 
