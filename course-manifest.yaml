@@ -134,7 +134,7 @@ modules:
 
       - type: "assignment"
         name: "M04-A2: Track Specialization"
-        file: "assignments/week-08-track-specialization.md"
+        file: "assignments/Week_08_Assignment_Track_Specialization.md"
         status: "complete"
 
       - type: "context-doc"
