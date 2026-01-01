@@ -3,7 +3,7 @@
 # CSC-113 AI Fundamentals
 
 manifest_version: "0.1"
-last_updated: "2026-01-01T19:45:00Z"
+last_updated: "2026-01-01T21:00:00Z"
 
 course:
   id: "CSC-113"
@@ -51,12 +51,12 @@ modules:
       - type: "context-doc"
         name: "SAGE-core.md"
         file: "sage-context/SAGE-core.md"
-        status: "planned"
+        status: "complete"
 
       - type: "context-doc"
         name: "course-overview.md"
         file: "sage-context/course-overview.md"
-        status: "planned"
+        status: "complete"
 
   - id: "M02"
     name: "AI Exploration & GitHub Mastery"
@@ -79,12 +79,12 @@ modules:
       - type: "context-doc"
         name: "github-basics.md"
         file: "sage-context/github-basics.md"
-        status: "planned"
+        status: "complete"
 
       - type: "context-doc"
         name: "github-troubleshooting.md"
         file: "sage-context/github-troubleshooting.md"
-        status: "planned"
+        status: "complete"
 
   - id: "M03"
     name: "Prompt Engineering"
@@ -253,11 +253,11 @@ progress:
   assignment_percentage: 44
 
   total_context_docs: 14
-  context_docs_complete: 0
-  context_docs_planned: 14
-  context_doc_percentage: 0
+  context_docs_complete: 4
+  context_docs_planned: 10
+  context_doc_percentage: 29
 
-  overall_percentage: 23  # (7 + 0) / (16 + 14) * 100
+  overall_percentage: 37  # (7 + 4) / (16 + 14) * 100
 
 # Supporting materials status
 supporting_materials:
