@@ -855,7 +855,6 @@ Design a conversation flow for your assistant that handles multiple scenarios.
 
 ## Applying This to My Project
 **How this design informs my capstone**: [Specific applications]
-```
 
 ---
 
