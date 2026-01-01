@@ -603,7 +603,6 @@ Constraints: [Any limitations]
 
 ## Application to Project
 **Which techniques will help my capstone?**: [Specific plans]
-```
 
 ---
 
