@@ -97,7 +97,7 @@ This course teaches AI fundamentals through professional practice. Students lear
 
 ### Week 4: Bad Bot
 **Assignment:** Bad Bot - Learning Through Intentional Failure
-**Status:** ❌ Needs Creation
+**Status:** ✅ Complete
 **Source Material:** Canvas m2_hw1, bad-bot-gallery.md
 
 **Learning Focus:**
@@ -128,7 +128,7 @@ This course teaches AI fundamentals through professional practice. Students lear
 
 ### Week 5: Good Bot
 **Assignment:** Good Bot - Iterating Toward Excellence
-**Status:** ❌ Needs Creation
+**Status:** ✅ Complete
 **Source Material:** Canvas m3_hw1, Good Bot PDF
 
 **Learning Focus:**
@@ -182,8 +182,8 @@ This course teaches AI fundamentals through professional practice. Students lear
 ## Module 4: Project Ideation (Weeks 7-8)
 
 ### Week 7: Project Ideation
-**Assignment:** Research Ideation - Finding Your AI Application Project
-**Status:** ❌ Needs Creation
+**Assignment:** Project Ideation - Finding Your AI Application Project
+**Status:** ✅ Complete
 **Source Material:** Canvas m4_assign1
 
 **Learning Focus:**
@@ -441,10 +441,10 @@ This course teaches AI fundamentals through professional practice. Students lear
 | 1 | Hello GitHub | ✅ Complete |
 | 2 | Meet Kevin & SAGE | ✅ Complete |
 | 3 | AI Timeline Research | ✅ Complete |
-| 4 | Bad Bot | ❌ Needs Creation |
-| 5 | Good Bot | ❌ Needs Creation |
+| 4 | Bad Bot | ✅ Complete |
+| 5 | Good Bot | ✅ Complete |
 | 6 | Holiday Shopping Research | ✅ Complete |
-| 7 | Project Ideation | ❌ Needs Creation |
+| 7 | Project Ideation | ✅ Complete |
 | 8 | Track Specialization | ❌ Needs Creation |
 | 9 | Rapid Prototype Sprint | ❌ Needs Creation |
 | 10 | Project Planning | ❌ Needs Creation |
@@ -455,7 +455,7 @@ This course teaches AI fundamentals through professional practice. Students lear
 | 15 | Portfolio Preparation | ❌ Needs Creation |
 | 16 | Final Presentation | ❌ Needs Creation |
 
-**Current Progress: 4/16 assignments (25%)**
+**Current Progress: 7/16 assignments (44%)**
 
 ---
 
