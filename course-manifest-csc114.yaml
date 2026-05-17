@@ -1,0 +1,299 @@
+# course-manifest-csc114.yaml
+# CSC-114 Artificial Intelligence I — Summer 2026 delivery
+#
+# DATA LINEAGE
+# This manifest is SYNCED from Angela Westmoreland's canonical Norris Dashboard
+# at https://github.com/AMLW05/csc_dash (courses/CSC-114/). That upstream repo
+# is the source of truth for module structure, learning outcomes, deliverable
+# categories, and Canvas-ready HTML pages. Local additions (Module 0, Summer-
+# delivery compression notes) layer on top of the upstream structure but do
+# not override it.
+#
+# When upstream changes, re-sync rather than edit this file by hand.
+
+manifest_version: "0.1"
+last_synced: "2026-05-17"
+sync_source:
+  repository: "AMLW05/csc_dash"
+  branch: "main"
+  reference_path: "courses/CSC-114/"
+  upstream_status_summary: "100% built, certification-ready (per courses/CSC-114/canvas-html/README.md)"
+
+course:
+  id: "CSC-114"
+  name: "Artificial Intelligence I"
+  credits: 3
+  description: |
+    This course covers the study of intelligent agent design and rational
+    decision making. Topics include goal-driven agents, search techniques,
+    optimization, basic problem-solving methods, logic, knowledge-based agents,
+    statistical and probabilistic reasoning, and the basics of machine learning.
+    Upon completion, students should be able to demonstrate artificial
+    intelligence design concepts.
+    (Source: NC Community College official course catalog.)
+  prerequisites: ["CSC-113"]
+  corequisites: []
+
+  local_repository: "course-csc113-template"
+  upstream_repository: "AMLW05/csc_dash"
+  textbook:
+    title: "Deep Learning with Python, 3rd edition"
+    author: "François Chollet"
+    publisher: "Manning"
+    url: "https://www.manning.com/books/deep-learning-with-python-third-edition"
+    local_copy: "csc114/textbook/Deep_Learning_with_Python_Third_Edition.pdf"
+    notebooks: "csc114/textbook/deep-learning-with-python-notebooks-master.zip"
+
+  outcomes:
+    - "Distinguish chatbot, tool-using assistant, and autonomous agent design patterns"
+    - "Implement supervised learning techniques (classification, regression)"
+    - "Design and evaluate AI agents with appropriate tool configurations"
+    - "Apply neural networks and deep learning fundamentals using TensorFlow/Keras"
+    - "Build computer vision pipelines using CNNs and transfer learning"
+    - "Implement NLP techniques for sentiment analysis and text classification"
+    - "Integrate multiple ML techniques in a capstone project with portfolio defense"
+
+# Summer 2026 delivery context (local additions, not from upstream)
+summer_2026_delivery:
+  term_length_weeks: 8
+  module_count: 8
+  hours_per_week_target: 9  # f2f + asynchronous, per Senpai Teacherbot's planning notes
+  compression_factor: 0.5  # 16-week canonical → 8-week summer
+  co_instructor_absence: "Weeks 1–2 (solo instructor delivery for M00 + M01)"
+  delivery_notes:
+    - "Module 0 (M00) added locally for pre-Week-1 onboarding — does not exist upstream"
+    - "Each canonical 2-week module compresses to 1 week in Summer term"
+    - "'Either approach is success' framing: students may continue tweaking their agent (M00 product) or pivot to textbook track from M01 onward — both paths satisfy the course"
+  instructor_planning_notes: "csc114/# csc 114 planning.md"
+
+modules:
+  - id: "M00"
+    name: "Build Your Teaching Assistant"
+    weeks: [0]
+    phase: "Onboard"
+    description: |
+      Pre-Week-1 onboarding. Carries forward CSC-113's SAGE concept to a
+      Console-managed Claude agent. Hybrid delivery: 1 in-class meeting
+      (2 hours) + 1 asynchronous packet (~3 hours self-paced).
+    status: "draft"
+    upstream_status: "n/a (not in canonical csc_dash — locally added for Summer 2026)"
+    local_only: true
+
+    deliverables:
+      - type: "instructor-plan"
+        name: "Compressed Summer Delivery Plan"
+        path: "../../Claude/Projects/neo/csc114-module-0-plan.md"  # in Cowork workspace
+        status: "draft (v0.1)"
+      - type: "instructor-plan"
+        name: "Full 4-meeting Cloud Agents Instructor Plan (uncompressed source)"
+        path: "csc114/CSC-114_Module_Cloud_Agents_Instructor_Plan.md"
+        status: "draft (v0.1, awaiting instructional design review)"
+      - type: "student-packet"
+        name: "Full 4-meeting Cloud Agents Student Lab Packet (uncompressed source)"
+        path: "csc114/CSC-114_Module_Cloud_Agents_Student_Lab_Packet.md"
+        status: "draft"
+      - type: "research"
+        name: "Managed Agents platform research report"
+        path: "csc114/claude_managed_agents_research.md"
+        status: "complete"
+      - type: "student-packet"
+        name: "Asynchronous Meeting 2 packet (standalone)"
+        path: "TBD — Sprint 8 deliverable"
+        status: "planned"
+      - type: "comms"
+        name: "Pre-Meeting-1 setup email + Console account checklist"
+        path: "csc114/m00-setup-package.md"
+        status: "draft (v0.1)"
+        notes: "Contains: student email, student checklist, instructor pre-work, FAQ. Placeholders for {MEETING_1_DATE}, {COLLEGE_DOMAIN}, {INVITE_BY_DATE}, {TROUBLESHOOT_BY_DATE}."
+
+  - id: "M01"
+    name: "Foundation: ML setup + User stories intro"
+    weeks_summer: [1]
+    weeks_canonical: [1, 2]
+    phase: "Foundation"
+    canonical_color: "Blue (#1e88e5)"
+    description: "ML setup, user stories introduction. First textbook chapters."
+    summer_compression_note: "Needs review — 2 weeks of canonical content compressed to 1 week"
+    upstream_status: "complete (Canvas page authored)"
+    deliverables:
+      - type: "canvas-page"
+        upstream_path: "courses/CSC-114/canvas-html/Module_01_Canvas_Page.html"
+        upstream_status: "complete"
+
+  - id: "M02"
+    name: "Supervised Learning: Classification and Regression"
+    weeks_summer: [2]
+    weeks_canonical: [3, 4]
+    phase: "Foundation"
+    canonical_color: "Purple (#7e57c2)"
+    points: 50  # 2 × 25pt assignments
+    pm_integration: "Story point estimation, velocity tracking intro"
+    technical_topics: ["classification (spam detection)", "regression (price prediction)"]
+    clos: ["CLO1 (Implement ML)", "CLO5 (Document)"]
+    upstream_status: "template ready (Canvas page not yet authored)"
+    deliverables:
+      - type: "canvas-page"
+        upstream_path: "courses/CSC-114/canvas-html/Module_02_Canvas_Page.html"
+        upstream_status: "stub (template specified)"
+
+  - id: "M03"
+    name: "First Sprint — Evaluation"
+    weeks_summer: [3]
+    weeks_canonical: [5, 6]
+    phase: "Sprint Work"
+    canonical_color: "Green (#43a047)"
+    sprint: 1
+    description: "First sprint deliverable with model evaluation focus."
+    upstream_status: "complete (Canvas page authored)"
+    deliverables:
+      - type: "canvas-page"
+        upstream_path: "courses/CSC-114/canvas-html/Module_03_Canvas_Page.html"
+        upstream_status: "complete"
+
+  - id: "M04"
+    name: "AI Agents"
+    weeks_summer: [4]
+    weeks_canonical: [7, 8]
+    phase: "Sprint Work"
+    canonical_color: "Teal (#00897b)"
+    points: 75  # 50pt sprint + 25pt retro
+    sprint: 2
+    pm_integration: "Sprint 2, improved practices from Sprint 1 retro"
+    technical_topics: ["AI agent design", "decision-making algorithms"]
+    clos: ["CLO3 (Design agents)", "CLO5 (Document)"]
+    upstream_status: "template ready (Canvas page not yet authored)"
+    deferred_from_m00: ["MCP servers", "credential vaults", "environment networking"]
+    deliverables:
+      - type: "canvas-page"
+        upstream_path: "courses/CSC-114/canvas-html/Module_04_Canvas_Page.html"
+        upstream_status: "stub (template specified)"
+
+  - id: "M05"
+    name: "Neural Networks"
+    weeks_summer: [5]
+    weeks_canonical: [9, 10]
+    phase: "Deep Learning"
+    canonical_color: "Deep Orange (#f4511e)"
+    points: 75
+    sprint: 3
+    pm_integration: "Sprint 3, autonomous execution expected"
+    technical_topics: ["TensorFlow/Keras", "backpropagation", "gradient descent"]
+    clos: ["CLO1 (Implement ML)", "CLO2 (Evaluate)"]
+    textbook_alignment: "Deep Learning with Python 3e, chs. 2–5"
+    upstream_status: "template ready (Canvas page not yet authored)"
+    deliverables:
+      - type: "canvas-page"
+        upstream_path: "courses/CSC-114/canvas-html/Module_05_Canvas_Page.html"
+        upstream_status: "stub (template specified)"
+
+  - id: "M06"
+    name: "Computer Vision + Ethics"
+    weeks_summer: [6]
+    weeks_canonical: [11, 12]
+    phase: "Deep Learning"
+    canonical_color: "Indigo (#3949ab)"
+    points: 75
+    sprint: 4
+    pm_integration: "Sprint 4, ethical considerations integrated"
+    technical_topics: ["CNNs", "transfer learning", "pre-trained models"]
+    clos: ["CLO1 (Implement)", "CLO4 (Analyze ethics)"]
+    textbook_alignment: "Deep Learning with Python 3e, chs. 8–9"
+    upstream_status: "template ready (Canvas page not yet authored)"
+    deferred_from_m00: ["prompt injection testing"]
+    deliverables:
+      - type: "canvas-page"
+        upstream_path: "courses/CSC-114/canvas-html/Module_06_Canvas_Page.html"
+        upstream_status: "stub (template specified)"
+
+  - id: "M07"
+    name: "NLP and Text Processing"
+    weeks_summer: [7]
+    weeks_canonical: [13, 14]
+    phase: "Application"
+    canonical_color: "Pink (#d81b60)"
+    points: 75
+    sprint: 5
+    pm_integration: "Sprint 5, performance optimization focus"
+    technical_topics: ["sentiment analysis", "text classification"]
+    clos: ["CLO1 (Implement ML)", "CLO2 (Evaluate)"]
+    textbook_alignment: "Deep Learning with Python 3e, chs. 11–12"
+    upstream_status: "template ready (Canvas page not yet authored)"
+    deliverables:
+      - type: "canvas-page"
+        upstream_path: "courses/CSC-114/canvas-html/Module_07_Canvas_Page.html"
+        upstream_status: "stub (template specified)"
+
+  - id: "M08"
+    name: "Capstone + Portfolio Defense"
+    weeks_summer: [8]
+    weeks_canonical: [15, 16]
+    phase: "Capstone"
+    canonical_color: "Deep Purple (#5e35b1)"
+    points: 175  # 100 capstone + 75 presentation
+    sprint: 6
+    pm_integration: "Sprint 6, process portfolio (shows PM growth across semester)"
+    technical_topics: ["multi-technique ML project", "professional presentation"]
+    clos: ["All CLOs (CLO1–CLO5)"]
+    upstream_status: "template ready (Canvas page not yet authored)"
+    deliverables:
+      - type: "canvas-page"
+        upstream_path: "courses/CSC-114/canvas-html/Module_08_Canvas_Page.html"
+        upstream_status: "stub (template specified)"
+
+# Cross-cutting threads (from canonical csc_dash)
+threads:
+  - name: "PM Integration"
+    description: |
+      Project management thread woven through modules. Builds: story-point
+      estimation (M02) → first sprint (M03) → autonomous execution (M05) →
+      process portfolio (M08).
+    upstream_path: "courses/CSC-114/pm-materials/"
+  - name: "Sacred Flow"
+    description: "GitHub discipline: Issue → Branch → Work → Commit → PR → Merge. Inherited from CSC-113."
+  - name: "Four-Category Rubric"
+    description: |
+      AI Partnership Quality / Problem-Solving Process / Professional
+      Communication / Critical Thinking & Ethics. 25% each, applied across
+      all graded modules.
+
+# Upstream csc_dash subdirectory categories (for reference when navigating courses/CSC-114/)
+upstream_categories:
+  - activities       # in-class activities
+  - assignments      # student assignments
+  - audits           # course quality / certification audits
+  - canvas-html      # Canvas LMS-ready HTML module pages
+  - instructor-guide # instructor-facing guide
+  - knowledge-checks # assessments
+  - planning-sheets  # module planning sheets
+  - pm-materials     # project management materials
+  - reference-materials  # supplemental references
+
+# Progress summary
+progress:
+  canonical_modules_total: 8
+  canonical_canvas_pages_authored: 2  # M01, M03
+  canonical_canvas_pages_stubbed: 6   # M02, M04, M05, M06, M07, M08
+  local_modules_added: 1               # M00
+  local_modules_draft: 1               # M00
+  overall_summary: |
+    Upstream (csc_dash) marks CSC-114 as 100% built / certification-ready,
+    with full module specifications. Two Canvas pages (M01, M03) are fully
+    authored; six (M02, M04–M08) are template-ready but the Canvas HTML
+    pages have not been written upstream. Locally, only M00 needs original
+    authoring for Summer 2026 delivery.
+
+# Open coordination items with upstream owner (Angela Westmoreland @AMLW05)
+coordination_with_upstream:
+  - "RESOLVED 2026-05-17: M00 stays local-only as a pre-Week-1 add-on. Does not disturb the canonical 8-module layout."
+  - "Are the Summer 2026 compression decisions (16 → 8 weeks) Senpai Teacherbot-specific, or should other instructors adopt them?"
+  - "Should the Canvas pages for M02, M04–M08 be authored upstream before Summer term starts, or after the first cohort runs through them?"
+  - "How are upstream-vs-local manifest divergences resolved? (Suggested: upstream wins for module structure; local layers for delivery decisions.)"
+
+# Re-sync instructions
+resync:
+  command: "Re-survey AMLW05/csc_dash and regenerate this file when canonical changes are detected"
+  triggers:
+    - "New module added or removed upstream"
+    - "Canvas pages for M02, M04–M08 authored upstream"
+    - "CLOs or learning outcomes revised"
+    - "Subdirectory categories change in courses/CSC-114/"

@@ -101,4 +101,6 @@ Use the csc 249 data structures as a visual example.
 
 
 
-
+csc 114 module zero will include building a cloud agent to help with the rest of the class.
+some students may well continue tweaking and building their agent rather than engaging with the textbook. 
+This is fine, either approach is success. 
