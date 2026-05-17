@@ -1,1 +1,6 @@
 .DS_Store
+
+# Textbook binaries — see csc114/textbook/README.md for sourcing.
+# Track only the markdown documentation, not the PDF/zip files.
+csc114/textbook/*
+!csc114/textbook/README.md
